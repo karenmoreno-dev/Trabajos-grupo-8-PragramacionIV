@@ -1,5 +1,4 @@
 package ejercicio1;
-
 import java.time.LocalDate;
 
 public class Persona {
@@ -8,11 +7,10 @@ public class Persona {
 	private String nombre;
 	private String apellido;
 	private LocalDate fechaNacimiento;
-	private String genero;
+	private Genero genero;
 	private String direccion;
 	private String telefono;
 	private String email;
-	
 	
 	
 	public String getDni() {
@@ -39,10 +37,10 @@ public class Persona {
 	public void setFechaNacimiento(LocalDate fechaNacimiento) {
 		this.fechaNacimiento = fechaNacimiento;
 	}
-	public String getGenero() {
+	public Genero getGenero() {
 		return genero;
 	}
-	public void setGenero(String genero) {
+	public void setGenero(Genero genero) {
 		this.genero = genero;
 	}
 	public String getDireccion() {
