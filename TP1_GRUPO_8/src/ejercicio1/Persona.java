@@ -61,5 +61,16 @@ public class Persona {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	@Override
+	public String toString() {
+		return "Persona DNI=" + dni +
+		           ", NOMBRE=" + nombre +
+		           ", APELLIDO=" + apellido +
+		           ", FECHA_NACIMIENTO=" + fechaNacimiento +
+		           ", GENERO=" + genero +
+		           ", DIRECCION=" + direccion +
+		           ", TELEFONO=" + telefono +
+		           ", EMAIL=" + email;
+	}
 	
 }
