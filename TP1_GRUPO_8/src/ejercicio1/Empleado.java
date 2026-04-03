@@ -16,8 +16,13 @@ public class Empleado extends Persona{
 		this.puesto = "Sin puesto" ;
 	}
 	
-	public Empleado(String dni, String nombre, String apellido, LocalDate fechaNacimiento, Genero genero, String direccion, String telefono, String email) {
+	
+	public Empleado (String dni, String nombre, String apellido, LocalDate fechaNacimiento, 
+			Genero genero, String direccion, String telefono, String email, String puesto) {
 		
+		super(dni, nombre, apellido, fechaNacimiento, genero, direccion, telefono, email);
+	    this.legajo = cont++;
+	    this.puesto = puesto;
 	}
 
 	public int getLegajo() {
