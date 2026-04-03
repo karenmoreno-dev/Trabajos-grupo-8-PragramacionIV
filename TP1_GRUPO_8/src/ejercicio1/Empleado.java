@@ -8,6 +8,13 @@ public class Empleado extends Persona{
 	private String puesto;
 	private static int cont = 0;
 	
+	//--metodo que pertenece a la clase -------
+	public static int devuelveProximoLegajo() {
+		return cont+1; 
+	}
+	
+	
+	
 	//Constructor vacio llamando al constructor de "Persona"
 	public Empleado () {
 		super();
