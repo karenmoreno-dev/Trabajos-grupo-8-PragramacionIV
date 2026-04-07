@@ -19,12 +19,39 @@ public class Principal {
 	    emp1.setEmail("agustingonzalez@gmail.com");
 	    emp1.setPuesto("IT");
 	    
-	//    
+//    
 	    
-	    System.out.print("---LISTA EMPLEADOS---");
+// Empleado 2
+	    
+	   Empleado emp2 = new Empleado("47233579", "Victoria", "Caseres", LocalDate.of(2005, 11, 24), Genero.Femenino, "calle mentira 972", "1132328274", "victoriacaseres@gmail.com", "Administrativa");
+	   
+//
+	   
+// Empleado 3 
+	   
+	   Empleado emp3 = new Empleado();
+	    
+	    emp3.setDni("12345678");
+	    emp3.setApellido("Martinez");
+	    emp3.setFechaNacimiento(LocalDate.of(2006, 10, 5));
+	    emp3.setGenero(Genero.Masculino);
+	    emp3.setNombre("Ludmila");
+	    emp3.setDireccion("calle 89");
+	    emp3.setTelefono("1165654371");
+	    emp3.setEmail("ludmilamatinez@gmail.com");
+	    emp3.setPuesto("Medico");
+	    
+		   
+//	    
+	   
+	    System.out.print("---LISTA EMPLEADOS---" + System.lineSeparator());
 	    System.out.print(emp1.toString());
+	    System.out.print(emp2.toString());
+	    System.out.print(emp3.toString());
+	
 	}
 	
+
 
 
 }

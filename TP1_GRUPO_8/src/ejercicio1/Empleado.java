@@ -28,7 +28,8 @@ public class Empleado extends Persona{
 			Genero genero, String direccion, String telefono, String email, String puesto) {
 		
 		super(dni, nombre, apellido, fechaNacimiento, genero, direccion, telefono, email);
-	    this.legajo = cont++;
+		cont++;
+	    this.legajo = cont;
 	    this.puesto = puesto;
 	}
 
@@ -46,10 +47,15 @@ public class Empleado extends Persona{
 	}
 
 
+
 	@Override
 	public String toString() {
-		return "Empleado con LEGAJO= " + legajo +
-                          ", PUESTO= " + puesto ;
+		return "Empleado con LEGAJO= " + legajo + ", PUESTO= " + puesto + super.toString() + System.lineSeparator() ;
 	}
+
+
+	
+
+	
 
 }
