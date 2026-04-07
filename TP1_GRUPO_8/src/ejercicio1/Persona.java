@@ -79,14 +79,14 @@ public class Persona {
 	}
 	@Override
 	public String toString() {
-		return ", DNI= " + dni +
-		           ", NOMBRE= " + nombre +
-		           ", APELLIDO= " + apellido +
-		           ", FECHA NACIMIENTO= " + fechaNacimiento +
-		           ", GENERO= " + genero +
-		           ", DIRECCION= " + direccion +
-		           ", TELEFONO= " + telefono +
-		           ", EMAIL= " + email;
+		return "| DNI= " + dni +
+		           "| NOMBRE= " + nombre +
+		           "| APELLIDO= " + apellido +
+		           "| FECHA NACIMIENTO= " + fechaNacimiento +
+		           "| GENERO= " + genero +
+		           "| DIRECCION= " + direccion +
+		           "| TELEFONO= " + telefono +
+		           "| EMAIL= " + email;
 	}
 	
 }

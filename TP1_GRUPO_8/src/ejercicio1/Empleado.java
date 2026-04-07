@@ -6,7 +6,7 @@ public class Empleado extends Persona{
 	
 	private int legajo;
 	private String puesto;
-	private static int cont = 0;
+	private static int cont = 999;
 	
 	//--metodo que pertenece a la clase -------
 	public static int devuelveProximoLegajo() {
